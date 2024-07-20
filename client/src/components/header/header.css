@@ -1,0 +1,205 @@
+.header{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url('https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  /* background-color: #003580; */
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+    
+}
+.header.listM{
+    background:#003580 ;
+    position: relative;
+    height:90px;
+    color: white;
+    display: flex;
+    justify-content: center;
+      
+  }
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;   
+}
+.headerList{
+    width: 100%;
+    margin-left: -200px;
+    padding-left: 200px;
+    margin-top: 20px;
+    display:flex;
+    gap:40px;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 10;
+}
+.dark-head{
+    padding-top: -50px;
+    background-color: #003580;
+    transition: 0.5s;
+    padding-bottom: 60px;
+    height: 10px;
+}
+
+/* .headerListItem{
+    display:flex;
+    align-items: center;
+    gap:9px;
+    cursor: pointer;
+}
+.headerListItem.active{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.headerListItem .active{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+} */
+.headerListItem {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link.active {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.headerListItem:hover {
+   transform:scale(1.10);
+}
+
+.headerTitle{
+    margin-top: 120px;
+    animation: fadeIn 2s ease-in;
+}
+.headerDesc{
+    margin: 20px 0px;
+    animation: fadeIn 2s ease-in;
+}
+
+.headerBtn{
+    background-color: #0071c2;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.headerBtn:hover{
+    background-color: #02426f;
+}
+.headerSearch{
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+.headerIcon{
+    color: rgb(120, 117, 117);
+}
+.headerSearch .headerSearchItem .headerbtn{
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.headerSearch .headerSearchItem .headerbtn:hover{
+    background-color: #02426f;
+}
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.headerSearchInput{
+    font-weight: 300;
+    color:rgba(91, 88, 88, 0.842);
+    border:none;
+    outline: none;
+}
+.headerSearchText{
+    color: rgba(136, 131, 131, 0.842);
+    cursor: pointer;
+}
+.date{
+    position: absolute;
+    top:50px;
+    z-index: 2;
+}
+.options{
+    z-index: 2;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.4);
+    box-shadow:  0px 0px 10px -5px rgba(0,0,0,0.4);
+}
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color:black;
+}
+.optionCounterButton{
+    width: 28px;
+    height: 26px;
+    margin-bottom: 6px;
+    border: 1px solid #003580;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
